@@ -6,3 +6,6 @@ You can assume that there will be no missing data or attributes
 You can also assume that the first row of the dataset will contain column names and each non-blank line after that will contain a new data instance.
 Within these constraints, your program should be able to read and process any dataset containing any number of attributes.
 You can assume that the last column would contain the class labels.
+
+A couple of datasets are provided. You have to build your model using the training dataset,
+check the model and prune it with the validation dataset, and test it using the testing dataset.
