@@ -11,7 +11,11 @@ A couple of datasets are provided. You have to build your model using the traini
 check the model and prune it with the validation dataset, and test it using the testing dataset.
 
 Below is a summary of the requirements:
+
 • Build a binary decision tree classifier using the ID3 algorithm
+
 • Your program should read three arguments from the command line – complete path of the training dataset, complete path of the test dataset, and the pruning factor (explained later).
+
 • The datasets can contain any number of Boolean attributes and one Boolean class label. The class label will always be the last column.
+
 • The first row will define column names and every subsequent non-blank line will contain a data instance. If there is a blank line, your program should skip it.
