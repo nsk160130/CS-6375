@@ -1,3 +1,5 @@
+import DTfunctions
+
 df = pd.read_csv('Test.csv')
 del df["Instance"]
 
