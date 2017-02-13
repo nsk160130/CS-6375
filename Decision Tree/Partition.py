@@ -1,5 +1,3 @@
-import DTfunctions
-
 df = pd.read_csv('Test.csv')
 del df["Instance"]
 
@@ -31,7 +29,6 @@ def partition(level,target,lst,df,parent,value):
     print "You should split on:",X.name
     valuePa = "Parent Value:",value
     parentPa = "Parent is:",parent
-    tree.append((level,X.name,parentPa,valuePa))
    
     if all(v == 0 for v in Xp) or all(v == 1 for v in Xp):
         XpS = 0
@@ -44,6 +41,7 @@ def partition(level,target,lst,df,parent,value):
         XpN = 1
     for i in tree:
         print i
+    tree.append([level,X.name,parentPa,valuePa,Xp,Xn,XpS,XpN])
     tada = (level,tree,X,Xp,"Split Needed on Left" if XpS else "Left Is Pure",Xn,"Split Needed on Right" if XpN else "Right Is Pure")
     print "Split done:",(tada[4],tada[6])
     
@@ -77,3 +75,4 @@ def partition(level,target,lst,df,parent,value):
         tada2 = partition (level3,Y3,lst3,df3,parent,0)
     else:
         pass
+    return tree
