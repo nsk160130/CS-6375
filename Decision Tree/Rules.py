@@ -1,3 +1,6 @@
+import DTfunctions
+import PartitionandPrint
+
 # Make use of pDT
 # Now we have to formalize rules agian without using libraries then use it on the test data and mwasure the error.
 # At each node at level d we can have at max s^d modes
