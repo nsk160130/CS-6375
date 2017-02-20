@@ -1,2 +1,3 @@
 # CS-6375
-Machine Learning Class
+
+This repository contains all the materials related to the Machine Learning Class.
